@@ -41,9 +41,9 @@ kind: Deployment
 metadata:
   name: Pathnex-Deployment
 spec:
-  Replicas: 2
+  Replicas: 3
   selector: 
-    matchLabels:
+    matchLabels: 
        app: Pathnex-app
   template:
     metadata:
@@ -57,7 +57,7 @@ spec:
             - containerPort: 80
 
 
-* Shell Script - Disk Usage
+* Shell Script - Disk Usage 
 #!/bin/bash
 df -h
 
@@ -65,9 +65,13 @@ df -h
 # Docker Images & Containers
 docker pull ubuntu
 docker Images
-docker ps -a                     
+docker ps -a 
+                
 
 # Docker File
 From ubuntu:22.04
 RUN apt update
 CMD ["echo", " Hello Pathnex"]
+
+
+
