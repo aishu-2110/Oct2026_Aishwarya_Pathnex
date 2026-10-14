@@ -1,7 +1,7 @@
 Day 03 -Ansible, Terraform & Kubernetes Basics
 * Ansible - Install Apache and Start Service
 - name: Install and Start Apache
-  hosts: all
+  hosts: allS
   become: yes
   tasks:
     - name: Install Apache
